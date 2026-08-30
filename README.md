@@ -1,12 +1,18 @@
 # Power-Bi
 # 📊 Análisis de Datos y Dashboard en Power BI
 
-Este repositorio contiene el desarrollo de un panel de control interactivo diseñado en Power BI para analizar [menciona aquí el tema, ej: ventas, finanzas, clientes].
+Este repositorio contiene el desarrollo de un panel de control interactivo diseñado en Power BI para analizar [menciona ventas, finanzas, clientes, recursos humanos.
 
 ## 📋 Contenido del Repositorio
-* **`[Nombre_Archivo].pbix`**: Archivo original de Power BI con el modelo de datos y reportes.
-* **`data/`**: Carpeta que contiene las fuentes de datos utilizadas (archivos CSV, Excel, etc.).
-* **`screenshots/`**: Capturas de pantalla del reporte para visualización rápida.
+* Indicadores - KPI's 
+* Total de Colaboradores por Género (en % y Cantidad).
+* Tiempo en el Cargo (Años)
+* Tiempo en el cargo(Años) = Suma del Número Total de Años (Puesto) / Total de colaboradores Actuales
+* Porcentaje de Personal Insatisfecho
+* Tasa de Ausencia
+* Tasa de Ausencia = Número Total de Horas Ausentismo / Número Total de Horas Planificadas
+* Promedio de Evaluación, Edad
+* Costo de Planilla.
 
 ## ✨ Características del Dashboard
 * **Modelo de Datos:** Implementación de un modelo en estrella con tablas de hechos y dimensiones.
@@ -14,10 +20,9 @@ Este repositorio contiene el desarrollo de un panel de control interactivo dise�
 * **Interactividad:** Filtros dinámicos por año, región y categoría de producto.
 
 ## 📸 Vista Previa del Reporte
-*(Inserta aquí imágenes de tus pestañas de Power BI)*
-![Pantalla Principal](https://placeholder.com)
+<img width="1040" height="593" alt="image" src="https://github.com/user-attachments/assets/050fde3b-86a5-4996-88ef-0ae15515cff5" />
 
 ## 🛠️ Tecnologías y Orígenes de Datos
 * **Herramienta:** Power BI Desktop
 * **Lenguaje:** DAX (Data Analysis Expressions) / Power Query (M)
-* **Origen de Datos:** [Ej: Base de datos SQL / Archivos Excel]
+* **Origen de Datos:** datos_2023 / Archivos Excel]

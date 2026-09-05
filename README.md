@@ -1,18 +1,21 @@
-## 🎯 Impacto en el Negocio y Toma de Decisiones
+# People Analytics: Talent Performance & Compensation Insights 📊🇨🇴
 
-Este dashboard no solo muestra métricas; transforma los datos de Talento Humano en decisiones estratégicas para la empresa:
+Este repositorio contiene un dashboard ejecutivo de **People Analytics** desarrollado en **Power BI Desktop**, enfocado en la auditoría del rendimiento laboral, equidad salarial y distribución demográfica de una plantilla de 194 colaboradores.
 
-*   **Optimización de Costos de Planilla:** Permite a la dirección financiera identificar de forma inmediata qué departamentos consumen la mayor parte del presupuesto operativo y cruzarlo con sus resultados de desempeño.
-*   **Estrategia de Retención de Talento:** Al analizar la **Tasa de Ausencia** y el **Porcentaje de Personal Insatisfecho**, el equipo de Recursos Humanos puede diseñar planes de bienestar enfocados en los departamentos más críticos para reducir la rotación laboral.
-*   **Auditoría de Desempeño y Capacitación:** Las tarjetas de **Promedio de Evaluación** segmentadas por departamento ayudan a detectar qué equipos necesitan programas de entrenamiento técnico inmediatos para elevar su productividad.
+## 🛠️ Desafío de Ingeniería y Limpieza de Datos (Data Cleansing)
+El dataset original presentaba serias inconsistencias generadas por modelos de IA (clústeres artificiales de apellidos repetidos y salarios fuera de la escala real del mercado). Como Analista de Datos, apliqué un pipeline de transformación en **Python** y **Power Query** para garantizar la integridad del modelo:
+* **Diversificación Demográfica Absoluta:** Se eliminó la redundancia masiva reemplazando el pool por 134 apellidos colombianos únicos (*Restrepo, Gaviria, Ospina, Betancur*), garantizando que **no existan apellidos repetidos** en la corporación.
+* **Calibración Salarial Realista:** Se reescalaron los ingresos anuales a sueldos mensuales indexados en un rango estricto de **$482 a $2,000**, permitiendo un análisis de compensación limpio.
+* **Integridad Referencial:** Se preservó el historial de translados y promociones mapeando correctamente los IDs únicos a sus respectivas evaluaciones sin corromper el modelo relacional.
 
----
+## 📊 Arquitectura del Dashboard
+El reporte utiliza una paleta corporativa morada (Purple UI) estructurada en zonas de control visual:
+1. **KPIs Laterales Dinámicos:** Conteo automatizado de personal (`COUNTROWS`), Promedio de Evaluación (`AVERAGE`), Porcentaje de Género exacto (`DIVIDE`) y Proyección Teórica de Horas Planificadas utilizando variables DAX (`VAR` / `RETURN` / `COALESCE`).
+2. **Análisis de Distribución:** Segmentación única para auditar grupos de desempeño (*Excelente, Muy Bueno, Regular, Deficiente*).
+3. **Análisis de Correlación Avanzada:** Inclusión de un **Gráfico de Dispersión (Scatter Plot)** que cruza Edad vs. Salario para auditar la equidad de compensación interna de la empresa.
 
-## 🛠️ Fórmulas y Lógica DAX Utilizada
-
-Para garantizar la precisión de los indicadores empresariales mostrados en el reporte, se estructuraron las siguientes medidas y cálculos personalizados:
-
-*   **Tiempo Promedio en el Cargo:** 
-    `Tiempo en el Cargo (Años) = DIVIDE(SUM(Colaboradores[Años_Puesto]), [Total de Colaboradores])`
-*   **Tasa de Ausentismo Global:** 
-    `Tasa de Ausencia = DIVIDE([Total_Horas_Ausentismo], [Total_Horas_Planificadas])`
+## 🚀 Tecnologías Utilizadas
+* Power BI Desktop (Agosto 2026)
+* DAX (Data Analysis Expressions)
+* Power Query / M Language
+* Python (Pandas) para la limpieza del origen de datos

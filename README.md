@@ -1,23 +1,18 @@
-# Power-Bi
-# 📊 Análisis de Datos y Dashboard en Power BI
+## 🎯 Impacto en el Negocio y Toma de Decisiones
 
-Este repositorio contiene el desarrollo de un panel de control interactivo diseñado en Power BI para analizar Recursos humanos.
+Este dashboard no solo muestra métricas; transforma los datos de Talento Humano en decisiones estratégicas para la empresa:
 
-## ✨ Características del Dashboard
-* Indicadores - KPI's 
-* Total de Colaboradores por Género (en % y Cantidad).
-* Tiempo en el Cargo (Años)
-* Tiempo en el cargo(Años) = Suma del Número Total de Años (Puesto) / Total de colaboradores Actuales
-* Porcentaje de Personal Insatisfecho
-* Tasa de Ausencia
-* Tasa de Ausencia = Número Total de Horas Ausentismo / Número Total de Horas Planificadas
-* Promedio de Evaluación, Edad
-* Costo de Planilla.
+*   **Optimización de Costos de Planilla:** Permite a la dirección financiera identificar de forma inmediata qué departamentos consumen la mayor parte del presupuesto operativo y cruzarlo con sus resultados de desempeño.
+*   **Estrategia de Retención de Talento:** Al analizar la **Tasa de Ausencia** y el **Porcentaje de Personal Insatisfecho**, el equipo de Recursos Humanos puede diseñar planes de bienestar enfocados en los departamentos más críticos para reducir la rotación laboral.
+*   **Auditoría de Desempeño y Capacitación:** Las tarjetas de **Promedio de Evaluación** segmentadas por departamento ayudan a detectar qué equipos necesitan programas de entrenamiento técnico inmediatos para elevar su productividad.
 
-## 📸 Vista Previa del Reporte
-<img width="1040" height="593" alt="image" src="https://github.com/user-attachments/assets/050fde3b-86a5-4996-88ef-0ae15515cff5" />
+---
 
-## 🛠️ Tecnologías y Orígenes de Datos
-* **Herramienta:** Power BI Desktop
-* **Lenguaje:** DAX (Data Analysis Expressions) / Power Query (M)
-* **Origen de Datos:** datos_2023 / Archivos Excel
+## 🛠️ Fórmulas y Lógica DAX Utilizada
+
+Para garantizar la precisión de los indicadores empresariales mostrados en el reporte, se estructuraron las siguientes medidas y cálculos personalizados:
+
+*   **Tiempo Promedio en el Cargo:** 
+    `Tiempo en el Cargo (Años) = DIVIDE(SUM(Colaboradores[Años_Puesto]), [Total de Colaboradores])`
+*   **Tasa de Ausentismo Global:** 
+    `Tasa de Ausencia = DIVIDE([Total_Horas_Ausentismo], [Total_Horas_Planificadas])`

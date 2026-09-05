@@ -87,15 +87,6 @@ El panel lateral permite segmentar la información por:
 
 ---
 
-## 🚀 Cómo Usar
-
-1. Abre el archivo `.pbix` en **Power BI Desktop**.
-2. Actualiza la fuente de datos apuntando a tu base de datos o archivo Excel.
-3. Publica en **Power BI Service** para compartir con tu equipo.
-4. Utiliza los filtros laterales para explorar los datos por segmento.
-
----
-
 ## 🛠️ Tecnologías Utilizadas
 
 <p align="left">
@@ -108,7 +99,7 @@ El panel lateral permite segmentar la información por:
 
 ## 👤 Autor
 
-**Milton Vivero** — Human Resources
+**Milton Vivero** — People Analytics | Data Analitycs
 
 > *Dashboard diseñado para el área de Talento Humano con fines de control, seguimiento y toma de decisiones estratégicas.*
 

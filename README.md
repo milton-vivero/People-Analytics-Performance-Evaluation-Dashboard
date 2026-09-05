@@ -99,7 +99,7 @@ El panel lateral permite segmentar la información por:
 
 ## 👤 Autor
 
-**Milton Vivero** — People Analytics | Data Analitycs
+**Milton Vivero** — People and Data Analytics 
 
 > *Dashboard diseñado para el área de Talento Humano con fines de control, seguimiento y toma de decisiones estratégicas.*
 

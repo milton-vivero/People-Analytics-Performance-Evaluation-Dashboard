@@ -16,7 +16,8 @@ Proporcionar una visión consolidada y dinámica del rendimiento de los colabora
 
 ## 📸 Vista del Dashboard
 
-<img width="768" height="433" alt="image" src="https://github.com/user-attachments/assets/235a1206-5ae7-4387-90ca-df87fe650464" />
+<img width="1049" height="594" alt="image" src="https://github.com/user-attachments/assets/ddc7c9c5-14f2-4a3b-a1ee-09ad6c4984c7" />
+
 
 
 ---

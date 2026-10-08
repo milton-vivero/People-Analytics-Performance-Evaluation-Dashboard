@@ -1,4 +1,4 @@
-# 📊 Control de Desempeño y Rendimiento Laboral — Periodo 2023
+# 📊 Automatización de Reportes Evaluación del Desempeño — Periodo 2023
 
 > Dashboard interactivo desarrollado en **Power BI** para el monitoreo integral del desempeño, evaluación y productividad del talento humano.
 
